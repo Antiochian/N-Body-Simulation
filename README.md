@@ -1,6 +1,6 @@
 # N-Body-Simulation
 This program simulates a 2D system of massive bodies using a simple Euler-Richardson algorithm.
-Either "dust cloud" of 30 random objects or a preset toy model of the Solar System (including Halley's Comet) can be generated.
+Either a "dust cloud" of 30 random objects or a preset toy model of the Solar System (including Halley's Comet) can be generated.
 
 Press "r" to launch the "dust cloud" mode, and "s" to launch the Solar System mode. In "dust cloud" mode the view can be zoomed with the arrow keys.
 
