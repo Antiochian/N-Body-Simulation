@@ -203,7 +203,7 @@ def main():
     N=30
     if solarsystem == 1:
         makesolarsystem()
-        scale = int( min( (Nx,Ny)) / 18)
+        scale = int( min( (Nx,Ny)) / 12)
     else:
         makedustcloud(N,2)
         scale = int( min( (Nx,Ny)) / 10) #scale to fit window
