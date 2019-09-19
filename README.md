@@ -10,4 +10,5 @@ Please note that the radii are for visualisation only and are not to scale - the
 
 ---------
 ![Sample Output](newdustcloud.gif)
+![Sample Output](solarsystemSTATIC.png)
 ![Sample Output](solarsystem.gif)
