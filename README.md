@@ -9,5 +9,5 @@ Planets will coalesce into one larger mass if they collide with each other, cons
 Please note that the radii are for visualisation only and are not to scale - they are logarithmically proportional to the actual masses in the dustcloud mode, and preset in the Solar System mode..
 
 ---------
-![Sample Output](dustcloudnew.gif)
+![Sample Output](newdustcloud.gif)
 ![Sample Output](solarsystem.gif)
