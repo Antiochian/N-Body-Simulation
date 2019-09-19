@@ -1,18 +1,30 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Sep 16 18:40:24 2019
-Better 3-body problem
-@author: Antiochian
+N Body Problem
+@author: Antiochian //2k19
 
-This project was intended as a simpler task before attempting to write the 
-superior "betterorbits" program. This program has several flaws and limitations.
+DESCRIPTION:
+This program simulates a 2D system of massive bodies using a simple 
+Euler-Richardson algorithm. Either "dust cloud" of 30 random objects or a preset
+toy model of the Solar System (including Halley's Comet) can be generated.
 
-    1. A simple and inaccurate Euler algorithm is used
-    2. Planets are EulerSimulated sequentially, not simultaneously
-    3. There is no collision/coalescence functionality for when 2 planets collide
-    4. There is no GUI.
-    5. There is no easy way to add or remove planets
-    6. Object classes are not used
+                              
+CONTROLS:
+Press "r" to launch the "dust cloud" mode, and "s" the Solar System mode.
+In "dust cloud" mode the view can be zoomed in/out with the arrow keys, and
+planets will coalesce into one larger mass if they collide with each other, 
+conserving momentum and blending their colours together (the blending power is
+proportional to the mass)
+
+
+NOTES:
+This is a superior version of an earlier program called "simpleorbits.py".
+It is better in many ways:
+    1. A more accurate Euler-Richardson algorithm is used
+    2. Planets are simulated simultaneously, not sequentially
+    3. There is a collision/coalescence functionality for when 2 planets collide
+    4. Object classes are used, to make adding/removing planets trivial (previous simulation was hard-coded to only 2 planets)
     
 """
 
@@ -55,7 +67,7 @@ def makedustcloud(N,averagevel = 4, averagemass = 0.5):
     return
 
 def spiralbias(position):
-    #creats a velocity bias perpendular to position vector
+    #creates a velocity bias perpendular to position vector
     pointer = np.array([ position[1], -1*position[0]])
     velscale = np.linalg.norm(position)*3
     if linalg.norm(pointer) == 0:
